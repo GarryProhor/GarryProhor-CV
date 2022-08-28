@@ -2,7 +2,14 @@
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
-
+.contact{
+    background: var(--eerie-black-2);
+    border: 1px solid var(--jet);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
 .mapbox {
     position: relative;
     height: 250px;
