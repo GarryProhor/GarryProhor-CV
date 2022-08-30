@@ -298,9 +298,10 @@ main {
     background: var(--onyx);
     font-size: var(--fs-8);
     font-weight: var(--fw-300);
-    width: max-content;
+    width: 154px;
     padding: 3px 12px;
     border-radius: 8px;
+    text-align: center;
 }
 
 .info_more-btn {
@@ -403,10 +404,12 @@ main {
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-
-/**
- * responsive larger than 580px screen
- */
+@media (min-width: 360px) {
+    .info-content .title {
+        margin: 10px;
+        padding: 5px 12px;
+    }
+}
 
 @media (min-width: 580px) {
 
@@ -489,6 +492,7 @@ main {
         padding: 5px 18px;
     }
 
+
     .info-content .title:last-child {
         margin-top: 15px;
     }
@@ -530,7 +534,10 @@ main {
 
     .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
+    .info-content .title {
+        margin-top: 15px;
+        padding: 5px 18px;
+    }
 
     /**
      * SIDEBAR
