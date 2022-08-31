@@ -1,7 +1,6 @@
 import React from 'react';
-import avatar1 from "../../assets/images/avatar-1.png";
 
-const Testimonials = ({avatar, name, text}) => {
+const Testimonial = ({avatar, name, text}) => {
     return (
         <>
             <li className="testimonials-item">
@@ -26,4 +25,4 @@ const Testimonials = ({avatar, name, text}) => {
     );
 };
 
-export default Testimonials;
+export default Testimonial;
