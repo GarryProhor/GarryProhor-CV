@@ -10,6 +10,11 @@ import iconApp from "../assets/images/icon-app.svg";
 import iconPhoto from "../assets/images/icon-photo.svg";
 
 
+import avatar1 from "../assets/images/avatar-1.png";
+import avatar2 from "../assets/images/avatar-2.png";
+import avatar3 from "../assets/images/avatar-3.png";
+import avatar4 from "../assets/images/avatar-4.png";
+
 export const links = [
     {
         name: "Обо мне",
@@ -103,5 +108,40 @@ export const doing = [
         icon: iconPhoto,
         title: 'Рисунок',
         text: 'Делаю качественные рисунки любой категории на профессиональном уровне.'
+    }
+];
+
+export const testimonials = [
+    {
+      avatar: avatar1,
+      name: 'Сергей Филимончик',
+      text: 'Игоря наняли для создания фирменного стиля. Мы были очень довольны\n' +
+          '                                    проделанной работой. У него есть\n' +
+          '                                    большой опыт\n' +
+          '                                    и он очень заботится о мнении клиентов.'
+    },
+    {
+        avatar: avatar2,
+        name: 'Ирина Грушник',
+        text: 'Игоря наняли для создания фирменного стиля. Мы были очень довольны\n' +
+            '                                    проделанной работой. У него есть\n' +
+            '                                    большой опыт\n' +
+            '                                    и он очень заботится о мнении клиентов.'
+    },
+    {
+        avatar: avatar3,
+        name: 'Лера Левицкая',
+        text: 'Игоря наняли для создания фирменного стиля. Мы были очень довольны\n' +
+            '                                    проделанной работой. У него есть\n' +
+            '                                    большой опыт\n' +
+            '                                    и он очень заботится о мнении клиентов.'
+    },
+    {
+        avatar: avatar4,
+        name: 'Александр Высоконов',
+        text: 'Игоря наняли для создания фирменного стиля. Мы были очень довольны\n' +
+            '                                    проделанной работой. У него есть\n' +
+            '                                    большой опыт\n' +
+            '                                    и он очень заботится о мнении клиентов.'
     }
 ];

@@ -12,8 +12,9 @@ import logo5 from "../../assets/images/logo-5-color.png";
 import logo6 from "../../assets/images/logo-6-color.png";
 import './About.css';
 import Header from "../Header";
-import {doing} from "../../assets/data";
+import {doing, testimonials} from "../../assets/data";
 import Service from "./Service";
+import Testimonials from "./Testimonials";
 
 const About = () => {
     return (
@@ -58,95 +59,9 @@ const About = () => {
                 <h3 className="h3 testimonials-title">Отзывы</h3>
 
                 <ul className="testimonials-list has-scrollbar">
-
-                    <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item="">
-
-                            <figure className="testimonials-avatar-box">
-                                <img src={avatar1} alt="Daniel lewis" width="60"
-                                     data-testimonials-avatar=""/>
-                            </figure>
-
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title="">Сергей Филимончик</h4>
-
-                            <div className="testimonials-text" data-testimonials-text="">
-                                <p>
-                                    Игоря наняли для создания фирменного стиля. Мы были очень довольны
-                                    проделанной работой. У него есть
-                                    большой опыт
-                                    и он очень заботится о мнении клиентов.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item="">
-
-                            <figure className="testimonials-avatar-box">
-                                <img src={avatar2} alt="Jessica miller" width="60"
-                                     data-testimonials-avatar=""/>
-                            </figure>
-
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title="">Ирина Грушник</h4>
-
-                            <div className="testimonials-text" data-testimonials-text="">
-                                <p>
-                                    Игоря наняли для создания фирменного стиля. Мы были очень довольны
-                                    проделанной работой. У него есть
-                                    большой опыт
-                                    и он очень заботится о мнении клиентов.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item="">
-
-                            <figure className="testimonials-avatar-box">
-                                <img src={avatar3} alt="Emily evans" width="60"
-                                     data-testimonials-avatar=""/>
-                            </figure>
-
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title="">Лера Левицкая</h4>
-
-                            <div className="testimonials-text" data-testimonials-text="">
-                                <p>
-                                    Игоря наняли для создания фирменного стиля. Мы были очень довольны
-                                    проделанной работой. У него есть
-                                    большой опыт
-                                    и он очень заботится о мнении клиентов.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
-                    <li className="testimonials-item">
-                        <div className="content-card" data-testimonials-item="">
-
-                            <figure className="testimonials-avatar-box">
-                                <img src={avatar4} alt="Henry william" width="60"
-                                     data-testimonials-avatar=""/>
-                            </figure>
-
-                            <h4 className="h4 testimonials-item-title" data-testimonials-title="">Александр Высоконов</h4>
-
-                            <div className="testimonials-text" data-testimonials-text="">
-                                <p>
-                                    Игоря наняли для создания фирменного стиля. Мы были очень довольны
-                                    проделанной работой. У него есть
-                                    большой опыт
-                                    и он очень заботится о мнении клиентов.
-                                </p>
-                            </div>
-
-                        </div>
-                    </li>
-
+                    {
+                        testimonials.map(({avatar, name, text}) => <Testimonials key={name} avatar={avatar} name={name} text={text}/>)
+                    }
                 </ul>
 
             </section>
