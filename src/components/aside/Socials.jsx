@@ -1,5 +1,5 @@
 import React from 'react';
-import {socials} from "../assets/data";
+import {socials} from "../../assets/data";
 
 const Socials = () => {
     return (

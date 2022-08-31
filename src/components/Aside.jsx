@@ -1,7 +1,7 @@
 import React from 'react';
 import Info from "./aside/Info";
 import Contact from "./aside/Contact";
-import Socials from "./Socials";
+import Socials from "./aside/Socials";
 
 const Aside = () => {
     return (
