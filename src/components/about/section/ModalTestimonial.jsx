@@ -1,23 +1,24 @@
 import React from 'react';
 import avatar1 from "../../../assets/images/avatar-1.png";
 import iconQuote from "../../../assets/images/icon-quote.svg";
+import {AiOutlineClose} from 'react-icons/ai'
 
-const ModalTestimonial = () => {
+const ModalTestimonial = ({openModal, setOpenModal}) => {
     return (
         <>
-            <div className="modal-container" data-modal-container="">
+            <div  className={`modal-container ${openModal ? ' active' : ''}`} data-modal-container="">
 
-                <div className="overlay" data-overlay=""></div>
+                <div  className={`overlay ${openModal ? ' active' : ''}`} data-overlay=""></div>
 
-                <section className="testimonials-modal">
+                <section  className="testimonials-modal">
 
-                    <button className="modal-close-btn" data-modal-close-btn="">
-                        <ion-icon name="close-outline"></ion-icon>
+                    <button onClick={() => setOpenModal(false)} className="modal-close-btn" data-modal-close-btn="">
+                        <AiOutlineClose />
                     </button>
 
                     <div className="modal-img-wrapper">
                         <figure className="modal-avatar-box">
-                            <img src={avatar1} alt="Daniel lewis" width="80"
+                            <img src={avatar1} alt="Garry" width="80"
                                  data-modal-img=""/>
                         </figure>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Testimonial = ({avatar, name, text}) => {
+const Testimonial = ({avatar, name, text, setOpenModal}) => {
     return (
         <>
-            <li className="testimonials-item">
-                <div className="content-card" data-testimonials-item="">
+            <li onClick={() => setOpenModal(true)} className="testimonials-item">
+                <div  className="content-card" data-testimonials-item="">
 
                     <figure className="testimonials-avatar-box">
                         <img src={avatar} alt="Daniel lewis" width="60"

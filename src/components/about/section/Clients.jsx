@@ -12,7 +12,7 @@ const Clients = () => {
 
                 <ul className="clients-list has-scrollbar">
                     {
-                        clients.map(({logo}) => <Client logo={logo}/>)
+                        clients.map(({logo}, index) => <Client key={index}  logo={logo}/>)
                     }
                 </ul>
 

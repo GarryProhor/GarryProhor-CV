@@ -8,6 +8,8 @@ import ModalTestimonial from "./section/ModalTestimonial";
 import Clients from "./section/Clients";
 
 const About = () => {
+    const [openModal, setOpenModal] = React.useState(false);
+
     return (
         <article className="about  active" data-page="about">
 
@@ -17,9 +19,12 @@ const About = () => {
 
             <Services />
 
-            <Testimonials />
+            {!openModal ?
+                <Testimonials setOpenModal={setOpenModal}/>
+                :
+                <ModalTestimonial  openModal={openModal} setOpenModal={setOpenModal}/>
 
-            {/*<ModalTestimonial />*/}
+            }
 
             <Clients />
 
