@@ -6,14 +6,13 @@ import blog3 from "../../assets/images/blog-3.jpg";
 import blog4 from "../../assets/images/blog-4.jpg";
 import blog5 from "../../assets/images/blog-5.jpg";
 import blog6 from "../../assets/images/blog-6.jpg";
+import Header from "../Header";
 
 const Blog = () => {
     return (
         <div className="blog" data-page="blog">
 
-            <header>
-                <h2 className="h2 article-title">Блог</h2>
-            </header>
+            <Header title='Блог'/>
 
             <section className="blog-posts">
 

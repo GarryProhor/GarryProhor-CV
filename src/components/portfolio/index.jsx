@@ -9,14 +9,13 @@ import project6 from "../../assets/images/project-6.png";
 import project7 from "../../assets/images/project-7.png";
 import project8 from "../../assets/images/project-8.jpg";
 import project9 from "../../assets/images/project-9.png";
+import Header from "../Header";
 
 const Portfolio = () => {
     return (
         <div className="portfolio" data-page="portfolio">
 
-            <header>
-                <h2 className="h2 article-title">Портфолио</h2>
-            </header>
+            <Header title='Портфолио'/>
 
             <section className="projects">
 

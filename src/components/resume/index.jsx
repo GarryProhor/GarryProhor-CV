@@ -1,13 +1,12 @@
 import React from 'react';
 import './Resume.css'
+import Header from "../Header";
 
 const Resume = () => {
     return (
         <div className="resume" data-page="resume">
 
-            <header>
-                <h2 className="h2 article-title">Резюме</h2>
-            </header>
+            <Header title='Резюме'/>
 
             <section className="timeline">
 

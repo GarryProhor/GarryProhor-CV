@@ -15,14 +15,13 @@ import logo4 from "../../assets/images/logo-4-color.png";
 import logo5 from "../../assets/images/logo-5-color.png";
 import logo6 from "../../assets/images/logo-6-color.png";
 import './About.css';
+import Header from "../Header";
 
 const About = () => {
     return (
         <article className="about  active" data-page="about">
 
-            <header>
-                <h2 className="h2 article-title">Обо мне</h2>
-            </header>
+            <Header title='Обо мне'/>
 
             <section className="about-text">
                 <p>

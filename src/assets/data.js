@@ -77,3 +77,26 @@ export const socials = [
         href: 'https://t.me/garry_prohor'
     }
 ];
+
+export const doing = [
+    {
+        icon: '',
+        title: '',
+        text: ''
+    },
+    {
+        icon: '',
+        title: '',
+        text: ''
+    },
+    {
+        icon: '',
+        title: '',
+        text: ''
+    },
+    {
+        icon: '',
+        title: '',
+        text: ''
+    }
+];

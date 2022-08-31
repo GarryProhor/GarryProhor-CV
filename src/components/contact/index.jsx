@@ -1,14 +1,13 @@
 import React from 'react';
 import './Contact.css';
+import Header from "../Header";
 
 const Contact = () => {
     return (
         <>
             <div className="contact" data-page="contact">
 
-                <header>
-                    <h2 className="h2 article-title">Контакты</h2>
-                </header>
+                <Header title='Контакты'/>
 
                 <section className="mapbox" data-mapbox="">
                     <figure>
