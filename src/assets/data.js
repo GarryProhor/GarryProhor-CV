@@ -4,6 +4,11 @@ import {MdOutlineAttachEmail, MdOutlineLocationCity} from 'react-icons/md';
 import {GiVibratingSmartphone} from 'react-icons/gi';
 import {BsCalendar2Day} from 'react-icons/bs';
 
+import iconDesign from "../assets/images/icon-design.svg";
+import iconDev from "../assets/images/icon-dev.svg";
+import iconApp from "../assets/images/icon-app.svg";
+import iconPhoto from "../assets/images/icon-photo.svg";
+
 
 export const links = [
     {
@@ -80,23 +85,23 @@ export const socials = [
 
 export const doing = [
     {
-        icon: '',
-        title: '',
-        text: ''
+        icon: iconApp,
+        title: 'Веб-разработка',
+        text: 'Качественная разработка сайтов на профессиональном уровне при помощи ReactJS.'
     },
     {
-        icon: '',
-        title: '',
-        text: ''
+        icon: iconDev,
+        title: 'Разработка серверной части',
+        text: 'Профессиональная разработка приложений на Java.'
     },
     {
-        icon: '',
-        title: '',
-        text: ''
+        icon: iconDesign,
+        title: 'Веб дизайн',
+        text: 'Самый современный и качественный дизайн, выполненный на профессиональном уровне.'
     },
     {
-        icon: '',
-        title: '',
-        text: ''
+        icon: iconPhoto,
+        title: 'Рисунок',
+        text: 'Делаю качественные рисунки любой категории на профессиональном уровне.'
     }
 ];

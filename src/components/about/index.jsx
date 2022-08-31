@@ -1,8 +1,4 @@
 import React from 'react';
-import iconDesign from "../../assets/images/icon-design.svg";
-import iconDev from "../../assets/images/icon-dev.svg";
-import iconApp from "../../assets/images/icon-app.svg";
-import iconPhoto from "../../assets/images/icon-photo.svg";
 import avatar1 from "../../assets/images/avatar-1.png";
 import avatar2 from "../../assets/images/avatar-2.png";
 import avatar3 from "../../assets/images/avatar-3.png";
@@ -16,6 +12,8 @@ import logo5 from "../../assets/images/logo-5-color.png";
 import logo6 from "../../assets/images/logo-6-color.png";
 import './About.css';
 import Header from "../Header";
+import {doing} from "../../assets/data";
+import Service from "./Service";
 
 const About = () => {
     return (
@@ -46,72 +44,7 @@ const About = () => {
                 <h3 className="h3 service-title">Что я делаю</h3>
 
                 <ul className="service-list">
-
-                    <li className="service-item">
-
-                        <div className="service-icon-box">
-                            <img src={iconDesign} alt="design icon"
-                                 width="40"/>
-                        </div>
-
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Веб дизайн</h4>
-
-                            <p className="service-item-text">
-                                Самый современный и качественный дизайн, выполненный на профессиональном уровне.
-                            </p>
-                        </div>
-
-                    </li>
-
-                    <li className="service-item">
-
-                        <div className="service-icon-box">
-                            <img src={iconDev} alt="Web development icon" width="40"/>
-                        </div>
-
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Веб-разработка</h4>
-
-                            <p className="service-item-text">
-                                Качественная разработка сайтов на профессиональном уровне при помощи ReactJS.
-                            </p>
-                        </div>
-
-                    </li>
-
-                    <li className="service-item">
-
-                        <div className="service-icon-box">
-                            <img src={iconApp} alt="mobile app icon" width="40"/>
-                        </div>
-
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">разработка серверной части</h4>
-
-                            <p className="service-item-text">
-                                Профессиональная разработка приложений на Java.
-                            </p>
-                        </div>
-
-                    </li>
-
-                    <li className="service-item">
-
-                        <div className="service-icon-box">
-                            <img src={iconPhoto} alt="camera icon" width="40"/>
-                        </div>
-
-                        <div className="service-content-box">
-                            <h4 className="h4 service-item-title">Рисунок</h4>
-
-                            <p className="service-item-text">
-                                Делаю качественные рисунки любой категории на профессиональном уровне.
-                            </p>
-                        </div>
-
-                    </li>
-
+                    {doing.map(({icon, title, text}) => <Service key={title} icon={icon} title={title} text={text} />)}
                 </ul>
 
             </section>
