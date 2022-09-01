@@ -7,7 +7,26 @@
     z-index: 1;
 }
 
-.filter-list { display: none; }
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 0 10px;
+    gap: 20px;
+}
+
+.filter-link {
+    color: var(--light-gray);
+    font-size: 15px;
+    padding: 20px 0;
+    transition: color var(--transition-1);
+}
+
+.filter-link:hover,
+.filter-link:focus { color: var(--light-gray-70); }
+
+.filter-link.active { color: var(--orange-yellow-crayola); }
 
 .filter-select-box {
     position: relative;

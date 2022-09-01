@@ -20,9 +20,9 @@ const ModalTestimonial = ({openModal, setOpenModal}) => {
                         <figure className="modal-avatar-box">
                             <img src={avatar1} alt="Garry" width="80"
                                  data-modal-img=""/>
-                        </figure>
 
-                        <img src={iconQuote} alt="quote icon"/>
+                        </figure>
+                        <img src={iconQuote} alt="quote icon" width="80"/>
                     </div>
 
                     <div className="modal-content">

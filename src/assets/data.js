@@ -232,3 +232,31 @@ export const progress = [
         percentage: 70
     }
 ];
+
+export const categories = [
+    {
+      id: 0,
+      title: 'Все',
+      path: 'all'
+    },
+    {
+        id: 1,
+        title: 'Веб разработка',
+        path: 'develop'
+    },
+    {
+        id: 2,
+        title: 'Веб дизайн',
+        path: 'design'
+    },
+    {
+        id: 3,
+        title: 'Приложения',
+        path: 'app'
+    },
+    {
+        id: 4,
+        title: 'Рисунки',
+        path: 'pictures'
+    }
+];

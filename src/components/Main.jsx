@@ -7,6 +7,7 @@ import Portfolio from "./portfolio";
 import Blog from "./blog";
 import Contact from "./contact";
 import NotFound from "./notfound";
+import Category from "./portfolio/section/Category";
 
 
 const Main = () => {
@@ -17,7 +18,9 @@ const Main = () => {
                 <Routes>
                     <Route index element={<About/>} />
                     <Route path='resume' element={<Resume/>}/>
-                    <Route path='portfolio' element={<Portfolio/>}/>
+                    <Route path='portfolio' element={<Portfolio/>}>
+                        <Route path='portfolio/:path' element={<Category />}/>
+                    </Route>
                     <Route path='blog' element={<Blog/>}/>
                     <Route path='contact' element={<Contact/>}/>
                     <Route path='*' element={<NotFound />}/>

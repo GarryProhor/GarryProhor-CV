@@ -10,6 +10,7 @@ import project7 from "../../assets/images/project-7.png";
 import project8 from "../../assets/images/project-8.jpg";
 import project9 from "../../assets/images/project-9.png";
 import Header from "../Header";
+import Category from "./section/Category";
 
 const Portfolio = () => {
     return (
@@ -19,59 +20,7 @@ const Portfolio = () => {
 
             <section className="projects">
 
-                <ul className="filter-list">
-
-                    <li className="filter-item">
-                        <button className="active" data-filter-btn="">All</button>
-                    </li>
-
-                    <li className="filter-item">
-                        <button data-filter-btn="">Веб дизайн</button>
-                    </li>
-
-                    <li className="filter-item">
-                        <button data-filter-btn="">Приложения</button>
-                    </li>
-
-                    <li className="filter-item">
-                        <button data-filter-btn="">Веь разработка</button>
-                    </li>
-
-                </ul>
-
-                <div className="filter-select-box">
-
-                    <button className="filter-select" data-select="">
-
-                        <div className="select-value" data-selecct-value="">Выбор категории</div>
-
-                        <div className="select-icon">
-                            <ion-icon name="chevron-down"></ion-icon>
-                        </div>
-
-                    </button>
-
-                    <ul className="select-list">
-
-                        <li className="select-item">
-                            <button data-select-item="">Все</button>
-                        </li>
-
-                        <li className="select-item">
-                            <button data-select-item="">Веб дизайн</button>
-                        </li>
-
-                        <li className="select-item">
-                            <button data-select-item="">Приложения</button>
-                        </li>
-
-                        <li className="select-item">
-                            <button data-select-item="">Веб разработка</button>
-                        </li>
-
-                    </ul>
-
-                </div>
+                <Category />
 
                 <ul className="project-list">
 
