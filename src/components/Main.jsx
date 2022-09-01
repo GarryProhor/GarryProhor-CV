@@ -6,6 +6,7 @@ import Resume from "./resume";
 import Portfolio from "./portfolio";
 import Blog from "./blog";
 import Contact from "./contact";
+import NotFound from "./notfound";
 
 
 const Main = () => {
@@ -19,6 +20,7 @@ const Main = () => {
                     <Route path='portfolio' element={<Portfolio/>}/>
                     <Route path='blog' element={<Blog/>}/>
                     <Route path='contact' element={<Contact/>}/>
+                    <Route path='*' element={<NotFound />}/>
                 </Routes>
             </div>
         </BrowserRouter>
