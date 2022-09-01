@@ -4,6 +4,7 @@ import {MdOutlineAttachEmail, MdOutlineLocationCity} from 'react-icons/md';
 import {GiVibratingSmartphone} from 'react-icons/gi';
 import {BsCalendar2Day} from 'react-icons/bs';
 
+
 import iconDesign from "../assets/images/icon-design.svg";
 import iconDev from "../assets/images/icon-dev.svg";
 
@@ -169,5 +170,65 @@ export const clients = [
     },
     {
         logo: logo6
+    }
+];
+
+export const education = [
+    {
+        name: 'Белорусский национальный технический университет',
+        period: '2004 — 2009',
+        text: 'Квалификация - инженер.'
+    },
+    {
+        name: 'ИТ-Класс',
+        period: '2020-2021',
+        text: 'Основы Java.'
+    },
+    {
+        name: 'INTERVALE',
+        period: '2021 — 2022',
+        text: 'Java Spring'
+    },
+    {
+        name: 'Cамостоятельное изучение',
+        period: '2021 — настоящее время',
+        text: 'HTML, CSS, JavaScript/ReactJS'
+    }
+];
+export const experience = [
+    {
+        name: 'Java',
+        period: 'декабрь 2021 — март 2022',
+        text: 'Выполнил 2 проекта по разработке сервиса поиска, хранения и продажи книг.\n' +
+            '                           Реализован командный проект.'
+    },
+    {
+        name: 'ReactJS',
+        period: '2022 — настоящее время',
+        text: 'Выполнил несколько пет проектов.'
+    },
+    {
+        name: 'Фрилансер',
+        period: '2022 — настоящее время',
+        text: 'Выполнил 4 заказа на фрилансе.'
+    }
+];
+
+export const progress = [
+    {
+       title: 'Java',
+       percentage: 70
+    },
+    {
+        title: 'Java Spring',
+        percentage: 60
+    },
+    {
+        title: 'HTML/CSS',
+        percentage: 70
+    },
+    {
+        title: 'ReactJS',
+        percentage: 70
     }
 ];

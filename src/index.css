@@ -8,7 +8,7 @@ a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+img, a, button, time, span { display: block; }
 
 button {
     font: inherit;
@@ -156,15 +156,18 @@ article {
 }
 
 .icon-box::before {
-    content: "";
+    /*content: "";*/
     position: absolute;
     inset: 1px;
     background: var(--eerie-black-1);
     border-radius: inherit;
     z-index: -1;
 }
+.box{
+    width: 50px;
+}
 
-.icon-box ion-icon { --ionicon-stroke-width: 35px; }
+.icon-box { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
 
@@ -508,7 +511,7 @@ main {
         font-size: var(--fs-8);
     }
 
-    .info_more-btn ion-icon { display: none; }
+    .info_more-btn  { display: none; }
 
     .separator { margin: 32px 0; }
 
