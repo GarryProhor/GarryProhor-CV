@@ -3,6 +3,7 @@ import './Portfolio.css';
 import Header from "../Header";
 import Category from "./section/Category";
 import Project from "./section/Project";
+import Search from "./section/Search";
 
 const Portfolio = () => {
     return (
@@ -12,7 +13,10 @@ const Portfolio = () => {
 
             <section className="projects">
 
-                <Category />
+                <div className='projects-search'>
+                    <Category />
+                    <Search />
+                </div>
 
                 <Project />
 

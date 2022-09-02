@@ -96,7 +96,10 @@
     display: block;
     animation: scaleUp 0.25s ease forwards;
 }
-
+.projects-search{
+    display: flex;
+    justify-content: space-between;
+}
 @keyframes scaleUp {
     0% { transform: scale(0.5); }
     100% { transform: scale(1); }
