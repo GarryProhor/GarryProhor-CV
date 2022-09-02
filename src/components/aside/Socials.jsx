@@ -10,7 +10,7 @@ const Socials = () => {
 
                 {socials.map(({icon, name, href}) =>(<li key={name} className="social-item">
                     <a href={href} className="social-link">
-                        <ion-icon name="logo-facebook">{icon}</ion-icon>
+                        {icon}
                     </a>
                 </li>))}
 

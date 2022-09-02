@@ -21,6 +21,18 @@ import logo4 from "../assets/images/logo-4-color.png";
 import logo5 from "../assets/images/logo-5-color.png";
 import logo6 from "../assets/images/logo-6-color.png";
 
+import project1 from "../assets/images/chess-1.png";
+import project2 from "../assets/images/chess-2.png";
+import project3 from "../assets/images/gravity-figma.png";
+import project4 from "../assets/images/tailand-figma.png";
+import project5 from "../assets/images/tailand-blog-figma.png";
+import project6 from "../assets/images/watches-1.png";
+import project7 from "../assets/images/watches-2.png";
+import project8 from "../assets/images/translate-gomel.png";
+import project9 from "../assets/images/translate-gomel-2.png";
+import project10 from "../assets/images/translate-gomel-figma.png";
+import project11 from "../assets/images/picture-1.jpg";
+
 export const links = [
     {
         name: "Обо мне",
@@ -259,4 +271,74 @@ export const categories = [
         title: 'Рисунки',
         path: 'pictures'
     }
+];
+
+export const projects = [
+    {
+        id: 0,
+        project: project1,
+        title: 'Chess - 1',
+        category: 'Приложения'
+    },
+    {
+        id: 1,
+        project: project2,
+        title: 'Chess - 2',
+        category: 'Приложения'
+    },
+    {
+        id: 2,
+        project: project3,
+        title: 'Gravity',
+        category: 'Веб дизайн'
+    },
+    {
+        id: 3,
+        project: project9,
+        title: 'Translate-gomel ',
+        category: 'Веб разработка'
+    },
+    {
+        id: 4,
+        project: project4,
+        title: 'Thailand',
+        category: 'Веб дизайн'
+    },
+    {
+        id: 5,
+        project: project5,
+        title: 'Thailand Blog',
+        category: 'Веб дизайн'
+    },
+    {
+        id: 6,
+        project: project7,
+        title: 'Watches Shop',
+        category: 'Веб разработка'
+    },
+    {
+        id: 7,
+        project: project8,
+        title: 'Translate-gomel mobile',
+        category: 'Веб разработка'
+    },
+    {
+        id: 8,
+        project: project6,
+        title: 'Watches',
+        category: 'Веб разработка'
+    },
+
+    {
+        id: 9,
+        project: project10,
+        title: 'Translate-gomel design',
+        category: 'Веб дизайн'
+    },
+    {
+        id: 10,
+        project: project11,
+        title: 'Рисунки',
+        category: 'Рисунки'
+    },
 ];
