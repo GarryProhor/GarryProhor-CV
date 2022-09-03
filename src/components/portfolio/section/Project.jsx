@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 
 import {FaRegEye} from 'react-icons/fa'
 
-const Project = ({ project, title, category}) => {
+const Project = ({ project, title, type}) => {
     return (
         <>
-            <ul className="project-list">
+
 
                 <li  className="project-item  active" data-filter-item="" data-category="web development">
                     <Link to='/'>
@@ -21,12 +21,12 @@ const Project = ({ project, title, category}) => {
 
                         <h3 className="project-title">{title}</h3>
 
-                        <p className="project-category">{category}</p>
+                        <p className="project-category">{type}</p>
 
                     </Link>
                 </li>
 
-            </ul>
+
         </>
     );
 };

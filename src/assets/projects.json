@@ -1,69 +1,79 @@
 [
   {
     "id": 0,
-    "project": "../assets/images/chess-1.png",
+    "project": "https://imageup.ru/img101/4014928/chess-1.jpg",
     "title": "Chess - 1",
-    "category": "Приложения"
+    "type": "Приложения",
+    "category": 3
   },
   {
     "id": 1,
-    "project": "../assets/images/chess-2.png",
+    "project": "https://imageup.ru/img260/4014932/chess-2.jpg",
     "title": "Chess - 2",
-    "category": "Приложения"
+    "type": "Приложения",
+    "category": 3
   },
   {
     "id": 2,
-    "project": "../assets/images/gravity-figma.png",
+    "project": "https://imageup.ru/img267/4014934/gravity-figma.jpg",
     "title": "Gravity",
-    "category": "Веб дизайн"
+    "type": "Веб дизайн",
+    "category": 2
   },
   {
     "id": 3,
-    "project": "../assets/images/tailand-figma.png",
+    "project": "https://imageup.ru/img120/4014936/translate-gomel-2.jpg",
     "title": "Translate-gomel",
-    "category": "Веб разработка"
+    "type": "Веб разработка",
+    "category": 1
   },
   {
     "id": 4,
-    "project": "../assets/images/tailand-blog-figma.png",
+    "project": "https://imageup.ru/img49/4014937/tailand-figma.jpg",
     "title": "Thailand",
-    "category": "Веб дизайн"
+    "type": "Веб дизайн",
+    "category": 2
   },
   {
     "id": 5,
-    "project": "../assets/images/watches-1.png",
+    "project": "https://imageup.ru/img152/4014940/tailand-blog-figma.jpg",
     "title": "Thailand Blog",
-    "category": "Веб дизайн"
+    "type": "Веб дизайн",
+    "category": 2
   },
   {
     "id": 6,
-    "project": "../assets/images/watches-2.png",
+    "project": "https://imageup.ru/img252/4014943/watches-2.jpg",
     "title": "Watches Shop",
-    "category": "Веб разработка"
+    "type": "Веб разработка",
+    "category": 1
   },
   {
     "id": 7,
-    "project": "../assets/images/translate-gomel.png",
+    "project": "https://imageup.ru/img21/4014947/translate-gomel.jpg",
     "title": "Translate-gomel mobile",
-    "category": "Веб разработка"
+    "type": "Веб разработка",
+    "category": 1
   },
   {
     "id": 8,
-    "project": "../assets/images/translate-gomel-2.png",
+    "project": "https://imageup.ru/img250/4014949/watches-1.jpg",
     "title": "Watches",
-    "category": "Веб разработка"
+    "type": "Веб разработка",
+    "category": 1
   },
-
   {
     "id": 9,
-    "project": "../assets/images/translate-gomel-figma.png",
+    "project": "https://imageup.ru/img231/4014951/translate-gomel-figma.jpg",
     "title": "Translate-gomel design",
-    "category": "Веб дизайн"
+    "type": "Веб дизайн",
+    "category": 2
   },
   {
     "id": 10,
-    "project": "../assets/images/picture-1.jpg",
+    "project": "https://imageup.ru/img42/4014953/picture-1.jpg",
     "title": "Рисунки",
-    "category": "Рисунки"
+    "type": "Рисунки",
+    "category": 4
   }
-  ]
+]

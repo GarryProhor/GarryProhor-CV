@@ -11,12 +11,13 @@ const Portfolio = () => {
     const [categoryId, setCategoryId] = React.useState(0);
     const [projects, setProjects] =React.useState([]);
 
+    const category = categoryId > 0 ? `category=${categoryId}` : '';
     React.useEffect(() =>{
-        fetch('https://62da700d9eedb699636e2d90.mockapi.io/projects')
+        fetch(`https://62da700d9eedb699636e2d90.mockapi.io/projects?${category}`)
             .then((response) => response.json())
             .then((items)=>{setProjects(items);
         });
-    }, []);
+    }, [categoryId]);
     return (
         <div className="portfolio" data-page="portfolio">
 
@@ -29,7 +30,9 @@ const Portfolio = () => {
                     <Search />
                 </div>
 
-                {projects.map(obj => (<Project key={obj.id} {...obj}/>))}
+                <ul className="project-list">
+                    {projects.map(obj => (<Project key={obj.id} {...obj}/>))}
+                </ul>
 
             </section>
 
