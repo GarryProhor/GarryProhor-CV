@@ -10,14 +10,17 @@ import Search from "./section/Search";
 const Portfolio = () => {
     const [categoryId, setCategoryId] = React.useState(0);
     const [projects, setProjects] =React.useState([]);
+    const [search, setSearch] = React.useState('');
+
 
     const category = categoryId > 0 ? `category=${categoryId}` : '';
+    const searchValue = search ? `&search=${search}` : '';
     React.useEffect(() =>{
-        fetch(`https://62da700d9eedb699636e2d90.mockapi.io/projects?${category}`)
+        fetch(`https://62da700d9eedb699636e2d90.mockapi.io/projects?${category}${searchValue}`)
             .then((response) => response.json())
             .then((items)=>{setProjects(items);
         });
-    }, [categoryId]);
+    }, [categoryId, search]);
     return (
         <div className="portfolio" data-page="portfolio">
 
@@ -27,7 +30,7 @@ const Portfolio = () => {
 
                 <div className='projects-search'>
                     <Category value={categoryId} onClickCategory={(id) => setCategoryId(id)}/>
-                    <Search />
+                    <Search search={search} setSearch={setSearch}/>
                 </div>
 
                 <ul className="project-list">
