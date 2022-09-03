@@ -9,6 +9,7 @@ import Clients from "./section/Clients";
 
 const About = () => {
     const [openModal, setOpenModal] = React.useState(false);
+    const [testimonial, setTestimonial] = React.useState([]);
 
     return (
         <article className="about  active" data-page="about">
@@ -20,9 +21,9 @@ const About = () => {
             <Services />
 
             {!openModal ?
-                <Testimonials setOpenModal={setOpenModal}/>
+                <Testimonials setTestimonial={setTestimonial} setOpenModal={setOpenModal}/>
                 :
-                <ModalTestimonial  openModal={openModal} setOpenModal={setOpenModal}/>
+                <ModalTestimonial  testimonial={testimonial} openModal={openModal} setOpenModal={setOpenModal}/>
 
             }
 

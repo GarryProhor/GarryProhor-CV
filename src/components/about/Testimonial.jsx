@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Testimonial = ({avatar, name, text, setOpenModal}) => {
+const Testimonial = ({id, avatar, name, text, setOpenModal}) => {
     return (
         <>
-            <li onClick={() => setOpenModal(true)} className="testimonials-item">
+            <li id={id} onClick={() => setOpenModal(true)} className="testimonials-item">
                 <div  className="content-card" data-testimonials-item="">
 
                     <figure className="testimonials-avatar-box">

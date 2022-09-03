@@ -1,30 +1,30 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {projects} from "../../../assets/data";
+
 import {FaRegEye} from 'react-icons/fa'
 
-const Project = () => {
+const Project = ({ project, title, category}) => {
     return (
         <>
             <ul className="project-list">
 
-                {projects.map(({id, project, title, category}) => (<li key={id} className="project-item  active" data-filter-item="" data-category="web development">
+                <li  className="project-item  active" data-filter-item="" data-category="web development">
                     <Link to='/'>
 
-                        <figure className="project-img">
+                        <div className="project-img">
                             <div className="project-item-icon-box">
                                <FaRegEye />
                             </div>
 
                             <img src={project} alt="finance" loading="lazy"/>
-                        </figure>
+                        </div>
 
                         <h3 className="project-title">{title}</h3>
 
                         <p className="project-category">{category}</p>
 
                     </Link>
-                </li>))}
+                </li>
 
             </ul>
         </>

@@ -11,7 +11,7 @@ const Testimonials = ({setOpenModal}) => {
 
                 <ul className="testimonials-list has-scrollbar">
                     {
-                        testimonials.map(({avatar, name, text}) => <Testimonial key={name} avatar={avatar} name={name} text={text} setOpenModal={setOpenModal}/>)
+                        testimonials.map(({avatar, name, text, id}) => <Testimonial key={id} id={id}  avatar={avatar} name={name} text={text} setOpenModal={setOpenModal}/>)
                     }
                 </ul>
 

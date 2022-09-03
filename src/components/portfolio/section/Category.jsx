@@ -3,20 +3,16 @@ import {categories} from '../../../assets/data';
 import {Link} from "react-router-dom";
 
 
-const Category = () => {
-    const [activeIndex, setActiveIndex] = React.useState(0);
+const Category = ({value, onClickCategory}) => {
 
-    const onClickCategory = (index) =>{
-        setActiveIndex(index)
-    }
     return (
         <>
             <ul className="filter-list ">
-                {categories.map(({title, path, id}) => {
+                {categories.map(({title,  id}) => {
                     return ( <li key={id} className="filter-item">
-                        <Link to={`portfolio/${path}`}
+                        <Link to=''
                               onClick={()=>onClickCategory(id)}
-                              className={`filter-link ${activeIndex === id ? ' active' : ''}`}>
+                              className={`filter-link ${value === id ? ' active' : ''}`}>
                             {title}
                         </Link>
                     </li>)

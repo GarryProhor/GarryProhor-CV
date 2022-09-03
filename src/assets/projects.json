@@ -1,0 +1,69 @@
+[
+  {
+    "id": 0,
+    "project": "../assets/images/chess-1.png",
+    "title": "Chess - 1",
+    "category": "Приложения"
+  },
+  {
+    "id": 1,
+    "project": "../assets/images/chess-2.png",
+    "title": "Chess - 2",
+    "category": "Приложения"
+  },
+  {
+    "id": 2,
+    "project": "../assets/images/gravity-figma.png",
+    "title": "Gravity",
+    "category": "Веб дизайн"
+  },
+  {
+    "id": 3,
+    "project": "../assets/images/tailand-figma.png",
+    "title": "Translate-gomel",
+    "category": "Веб разработка"
+  },
+  {
+    "id": 4,
+    "project": "../assets/images/tailand-blog-figma.png",
+    "title": "Thailand",
+    "category": "Веб дизайн"
+  },
+  {
+    "id": 5,
+    "project": "../assets/images/watches-1.png",
+    "title": "Thailand Blog",
+    "category": "Веб дизайн"
+  },
+  {
+    "id": 6,
+    "project": "../assets/images/watches-2.png",
+    "title": "Watches Shop",
+    "category": "Веб разработка"
+  },
+  {
+    "id": 7,
+    "project": "../assets/images/translate-gomel.png",
+    "title": "Translate-gomel mobile",
+    "category": "Веб разработка"
+  },
+  {
+    "id": 8,
+    "project": "../assets/images/translate-gomel-2.png",
+    "title": "Watches",
+    "category": "Веб разработка"
+  },
+
+  {
+    "id": 9,
+    "project": "../assets/images/translate-gomel-figma.png",
+    "title": "Translate-gomel design",
+    "category": "Веб дизайн"
+  },
+  {
+    "id": 10,
+    "project": "../assets/images/picture-1.jpg",
+    "title": "Рисунки",
+    "category": "Рисунки"
+  }
+  ]
