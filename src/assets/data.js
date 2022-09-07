@@ -3,6 +3,7 @@ import {TbBrandTelegram} from 'react-icons/tb';
 import {MdOutlineAttachEmail, MdOutlineLocationCity} from 'react-icons/md';
 import {GiVibratingSmartphone} from 'react-icons/gi';
 import {BsCalendar2Day} from 'react-icons/bs';
+import Profile from '../components/blog/profile/index'
 
 
 import iconDesign from "../assets/images/icon-design.svg";
@@ -53,6 +54,29 @@ export const links = [
     {
         name: "Контакты",
         path: '/contact'
+    },
+    {
+        name: <Profile />,
+        path: '/blog'
+    }
+];
+
+export const profiles = [
+    {
+        title: 'Войти',
+        path: '/blog'
+    },
+    {
+        title: 'Регистрация',
+        path: '/blog'
+    },
+    {
+        title: 'Информация о профиле',
+        path: '/blog'
+    },
+    {
+        title: 'Создать новый пост',
+        path: '/blog'
     }
 ];
 

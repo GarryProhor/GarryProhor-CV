@@ -9,6 +9,7 @@ import blog6 from "../../assets/images/blog-6.jpg";
 import Header from "../Header";
 import Form from "./form";
 
+
 const Blog = () => {
     return (
         <>
