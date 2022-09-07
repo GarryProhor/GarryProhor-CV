@@ -7,7 +7,7 @@ import blog4 from "../../assets/images/blog-4.jpg";
 import blog5 from "../../assets/images/blog-5.jpg";
 import blog6 from "../../assets/images/blog-6.jpg";
 import Header from "../Header";
-import Login from "./login";
+import Form from "./form";
 
 const Blog = () => {
     return (
@@ -16,7 +16,7 @@ const Blog = () => {
 
                 <Header title='Блог'/>
 
-                <Login />
+                <Form />
 
                 {/*<section className="blog-posts">*/}
 
