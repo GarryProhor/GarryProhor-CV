@@ -1,14 +1,13 @@
 import React from 'react';
-import myAvatar from "../../assets/images/my-avatar.png";
+import myAvatar from "../../assets/images/myavatar.png";
 import {titles} from "../../assets/data";
 
 const Info = () => {
     return (
-
             <div className="sidebar-info">
 
                 <figure className="avatar-box">
-                    <img src={myAvatar} alt="Garry Prohor" width="80"/>
+                    <img className='avatar' src={myAvatar} alt="Garry Prohor"/>
                 </figure>
 
                 <div className="info-content">
