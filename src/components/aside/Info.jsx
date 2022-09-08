@@ -1,5 +1,5 @@
 import React from 'react';
-import myAvatar from "../../assets/images/my-avatar.png";
+import myAvatar from "../../assets/images/myavatar.png";
 import {titles} from "../../assets/data";
 
 const Info = () => {
@@ -7,7 +7,7 @@ const Info = () => {
             <div className="sidebar-info">
 
                 <figure className="avatar-box">
-                    <img className='avatar' src={myAvatar} alt="Garry Prohor"/>
+                    <img  src={myAvatar}  alt="Garry Prohor"/>
                 </figure>
 
                 <div className="info-content">

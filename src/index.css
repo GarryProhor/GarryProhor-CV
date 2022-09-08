@@ -284,8 +284,13 @@ main {
 }
 
 .avatar-box {
-    background: var(--bg-gradient-onyx);
+    /*background: var(--bg-gradient-onyx);*/
     border-radius: 20px;
+}
+.avatar-box img {
+    width: 60px;
+    border-radius: 50px;
+    margin: auto;
 }
 
 .info-content .name {
@@ -486,7 +491,7 @@ main {
 
     .avatar-box { border-radius: 30px; }
 
-    .avatar-box img { width: 120px; }
+    .avatar-box img { width: 80px; }
 
     .info-content .name { margin-bottom: 15px; }
 
@@ -684,7 +689,7 @@ main {
 
     .sidebar-info { flex-direction: column; }
 
-    .avatar-box img { width: 150px; }
+    .avatar-box img { width: 100px; }
 
     .info-content .name {
         white-space: nowrap;
