@@ -285,7 +285,6 @@ main {
 
 .avatar-box {
     background: var(--bg-gradient-onyx);
-    border-radius: 20px;
 }
 
 .info-content .name {
@@ -484,7 +483,7 @@ main {
 
     .sidebar-info { gap: 25px; }
 
-    .avatar-box { border-radius: 30px; }
+
 
     .avatar-box img { width: 120px; }
 
