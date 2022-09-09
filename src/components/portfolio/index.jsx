@@ -26,8 +26,12 @@ const Portfolio = () => {
             .then((items)=>{
                 setProjects(items);
                 setIsLoading(false);
+
         });
     }, [categoryId, search, currentPage]);
+
+    const skeleton = [...new Array(4)].map((_, index) => <SkeletonPortfolio key={index}/>);
+    const portfolio = projects.map(obj => (<Project key={obj.id} {...obj}/>));
     return (
         <div className="portfolio" data-page="portfolio">
 
@@ -41,9 +45,7 @@ const Portfolio = () => {
                 </div>
 
                 <ul className="project-list">
-                    {isLoading ?
-                        [...new Array(4)].map((_, index) => <SkeletonPortfolio key={index}/>)
-                        : projects.map(obj => (<Project key={obj.id} {...obj}/>))}
+                    {isLoading ? skeleton : portfolio}
                 </ul>
 
                 <Pagination currentPage={currentPage} onChangePage={(page)=>setCurrentPage(page)}/>
