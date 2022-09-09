@@ -5,12 +5,12 @@ import ContentLoader from "react-content-loader";
 const SkeletonPortfolio = () => {
     return (
         <ContentLoader
-            speed={2}
+            speed={1}
             width={390}
             height={450}
             viewBox="0 0 390 450"
-            backgroundColor="#f3f3f3"
-            foregroundColor="#ecebeb"
+            backgroundColor="hsl(0, 0%, 22%)"
+            foregroundColor="hsl(0, 0%, 7%)"
         >
             <rect x="0" y="0" rx="0" ry="0" width="390" height="390" />
             <rect x="0" y="410" rx="0" ry="0" width="160" height="19" />
