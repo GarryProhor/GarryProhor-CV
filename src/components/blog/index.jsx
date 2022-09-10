@@ -9,9 +9,14 @@ import blog6 from "../../assets/images/blog-6.jpg";
 import Header from "../Header";
 import Form from "./form";
 import {AddPost} from "./posts";
+import axios from "axios";
 
 
 const Blog = () => {
+    React.useEffect(() =>{
+        axios.get('/posts');
+    },[]);
+
     return (
         <>
             <div className="blog" data-page="blog">
