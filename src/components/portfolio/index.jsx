@@ -1,11 +1,13 @@
 import React from 'react';
 import './Portfolio.css';
+import axios from 'axios';
 import Header from "../Header";
 import Category from "./section/Category";
 import Project from "./section/Project";
 import Search from "./section/Search";
 import Pagination from "../pagination";
 import SkeletonPortfolio from "../skeletons/SkeletonPortfolio";
+
 
 
 //https://62da700d9eedb699636e2d90.mockapi.io/projects
@@ -21,12 +23,10 @@ const Portfolio = () => {
     const searchValue = search ? `&search=${search}` : '';
     React.useEffect(() =>{
         setIsLoading(true);
-        fetch(`https://62da700d9eedb699636e2d90.mockapi.io/projects?page=${currentPage}&limit=4&${category}${searchValue}`)
-            .then((response) => response.json())
-            .then((items)=>{
-                setProjects(items);
+        axios.get(`https://62da700d9eedb699636e2d90.mockapi.io/projects?page=${currentPage}&limit=4&${category}${searchValue}`)
+            .then((response)=>{
+                setProjects(response.data);
                 setIsLoading(false);
-
         });
     }, [categoryId, search, currentPage]);
 

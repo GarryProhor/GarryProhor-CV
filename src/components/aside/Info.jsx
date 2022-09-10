@@ -1,5 +1,5 @@
 import React from 'react';
-import myAvatar from "../../assets/images/myavatar.png";
+import myAvatar from "../../assets/images/my-avatar.png";
 import {titles} from "../../assets/data";
 
 const Info = () => {
